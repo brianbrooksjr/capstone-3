@@ -81,7 +81,8 @@ public class ProductsController
     {
         try
         {
-            productDao.create(product);
+            //fixed bug: Update instead of Create
+            productDao.update(id,product);
         }
         catch(Exception ex)
         {
