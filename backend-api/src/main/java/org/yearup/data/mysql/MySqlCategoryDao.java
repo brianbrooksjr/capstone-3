@@ -39,38 +39,53 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao {
 
     @Override
     public Category getById(int categoryId) {
-        // get category by id
-        return null;
-    }
+        {
+            String sql = "SELECT * FROM categories WHERE category_id = ?";
 
-    @Override
-    public Category create(Category category) {
-        // create a new category
-        return null;
-    }
+            try (Connection connection = getConnection();
+                 PreparedStatement stmt = connection.prepareStatement(sql)) {
+                stmt.setInt(1, categoryId);
 
-    @Override
-    public void update(int categoryId, Category category) {
-        // update category
-    }
+                ResultSet resultSet = stmt.executeQuery();
 
-    @Override
-    public void delete(int categoryId) {
-        // delete category
-    }
+                if (resultSet.next()) {
+                    return mapRow(resultSet);
+                }
+            } catch (SQLException ex) {
+                throw new RuntimeException(ex);
+            }
 
-    private Category mapRow(ResultSet row) throws SQLException {
-        int categoryId = row.getInt("category_id");
-        String name = row.getString("name");
-        String description = row.getString("description");
-
-        Category category = new Category() {{
-            setCategoryId(categoryId);
-            setName(name);
-            setDescription(description);
-        }};
-
-        return category;
-    }
-
+            return null;
+        }
 }
+        @Override
+        public Category create (Category category){
+            // create a new category
+            return null;
+        }
+
+        @Override
+        public void update ( int categoryId, Category category){
+            // update category
+        }
+
+        @Override
+        public void delete ( int categoryId){
+            // delete category
+        }
+
+        private Category mapRow (ResultSet row) throws SQLException {
+            int categoryId = row.getInt("category_id");
+            String name = row.getString("name");
+            String description = row.getString("description");
+
+            Category category = new Category() {{
+                setCategoryId(categoryId);
+                setName(name);
+                setDescription(description);
+            }};
+
+            return category;
+        }
+
+    }
