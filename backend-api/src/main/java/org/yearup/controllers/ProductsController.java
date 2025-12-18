@@ -48,7 +48,7 @@ public class ProductsController
     {
         try
         {
-            var product = productDao.getById(id);
+            Product product = productDao.getById(id);
 
             if(product == null)
                 throw new ResponseStatusException(HttpStatus.NOT_FOUND);
@@ -96,7 +96,7 @@ public class ProductsController
     {
         try
         {
-            var product = productDao.getById(id);
+            Product product = productDao.getById(id);
 
             if(product == null)
                 throw new ResponseStatusException(HttpStatus.NOT_FOUND);
