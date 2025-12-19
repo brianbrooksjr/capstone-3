@@ -7,6 +7,7 @@ This backend API supports category and product organization and enables secure d
 ---
 
 Key Features
+---
 Category Management API
 
 Retrieve all categories
@@ -85,8 +86,5 @@ Required Softeware
 * **MySQL Server** (e.g., MySQL 8.x)
 * **MySQL Workbench** (to run the database script)
 * Internet browser (Chrome, Firefox, Edge, Safari, etc.)
-
-You do **not** need to install Maven separately; IntelliJ can use its bundled Maven.
-
 ---
 
