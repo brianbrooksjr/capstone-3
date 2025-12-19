@@ -4,7 +4,7 @@ Application Overview
 
 Easy Shop is a general-purpose online store offering a wide variety of consumer products.
 This backend API supports category and product organization and enables secure data manipulation through administrative privileges.
-````
+
 Implemented Features (Phase 1)
 Category Management API
 
@@ -23,7 +23,8 @@ Security Enforcement
 All create, update, and delete operations are restricted to users with the ADMIN role
 
 Read-only operations are publicly accessible
----
+'''
+
 
 ## Required Softeware
 
