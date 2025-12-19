@@ -3,7 +3,6 @@
 Application Overview
 
 Easy Shop is a general-purpose online store offering a wide variety of consumer products.
-This backend API supports category and product organization and enables secure data manipulation through administrative privileges.
 ---
 
 Key Features
