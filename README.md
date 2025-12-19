@@ -24,7 +24,8 @@ Security Enforcement
 All create, update, and delete operations are restricted to users with the ADMIN role
 
 Read-only operations are publicly accessible
-'''
+---
+
 Bug Fixes
 Bug 1 – Incorrect Product Search Results
 
