@@ -75,7 +75,7 @@ Intersting Code
 ---
 <img width="1059" height="613" alt="getById" src="https://github.com/user-attachments/assets/d55a7228-db06-4713-b51a-6ea35b39c58c" />
 
-getById is important because it’s the main way the app finds one specific category using its unique ID. Other methods, like creating or updating a category, rely on it to make sure they are working with the correct data. If this method works correctly, it helps prevent mistakes like missing records or duplicate entries.
+getById is important because it’s the main way the store finds one specific category using its unique ID. Other methods, like creating or updating a category, rely on it to make sure they are working with the correct data. If this method works correctly, it helps prevent mistakes like missing records or duplicate entries.
 
 Required Softeware
 ---
