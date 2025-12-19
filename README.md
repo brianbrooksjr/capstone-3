@@ -52,6 +52,8 @@ Ensured product IDs were preserved
 Confirmed no duplicate records are created
 
 New Features
+---
+
 Categories API
 
 Implemented full CRUD support for categories:
@@ -63,13 +65,20 @@ Public read access
 Proper validation and JSON formatting
 
 Security Enhancements
+---
 
 Role-based access enforced 
-
+  
 Only users with the ADMIN role can modify data
 
+Intersting Code
+---
+<img width="1059" height="613" alt="getById" src="https://github.com/user-attachments/assets/d55a7228-db06-4713-b51a-6ea35b39c58c" />
 
-## Required Softeware
+getById is important because it’s the main way the app finds one specific category using its unique ID. Other methods, like creating or updating a category, rely on it to make sure they are working with the correct data. If this method works correctly, it helps prevent mistakes like missing records or duplicate entries.
+
+Required Softeware
+---
 
 * **Java Development Kit (JDK) 17**
 * **IntelliJ IDEA Community Edition** (latest)
