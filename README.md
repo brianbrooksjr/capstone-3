@@ -1,18 +1,31 @@
-# Capstone 3 – EasyShop (Backend + Frontend)
+# Capstone 3 – EasyShop 
 
-This project contains a Java Spring Boot backend and a static HTML/CSS/JavaScript frontend.
+Application Overview
 
-When you unzip the archive, you should get a folder named `capstone-3` with this structure:
-
-```text
-capstone-3/
-  backend-api/      # Java Spring Boot backend (Maven)
-  frontend-ui/         # Static HTML, CSS, JS
+Easy Shop is a general-purpose online store offering a wide variety of consumer products.
+This backend API supports category and product organization and enables secure data manipulation through administrative privileges.
 ````
+Implemented Features (Phase 1)
+Category Management API
 
+Retrieve all categories
+
+Retrieve a category by ID
+
+Create a new category (ADMIN only)
+
+Update an existing category (ADMIN only)
+
+Delete a category (ADMIN only)
+
+Security Enforcement
+
+All create, update, and delete operations are restricted to users with the ADMIN role
+
+Read-only operations are publicly accessible
 ---
 
-## Requirements
+## Required Softeware
 
 * **Java Development Kit (JDK) 17**
 * **IntelliJ IDEA Community Edition** (latest)
@@ -40,7 +53,7 @@ If IntelliJ asks you to configure an SDK, choose **JDK 17**.
 
 ---
 
-## Database setup (MySQL)
+Database setup (MySQL)
 
 Before you run the backend, you must create and initialize the database.
 
