@@ -24,7 +24,49 @@ All create, update, and delete operations are restricted to users with the ADMIN
 
 Read-only operations are publicly accessible
 '''
+Bug Fixes
+Bug 1 – Incorrect Product Search Results
 
+Problem:
+Product searches returned incorrect results when filters were applied.
+
+Solution:
+
+Debugged DAO search logic
+
+Fixed query conditions to correctly apply filters
+
+---
+
+Bug 2 – Duplicate Products on Update
+
+Problem:
+Updating a product inserted a new record instead of modifying the existing one.
+
+Solution:
+
+Corrected DAO update logic to use UPDATE instead of INSERT
+
+Ensured product IDs were preserved
+
+Confirmed no duplicate records are created
+
+New Features
+Categories API
+
+Implemented full CRUD support for categories:
+
+Admin-only create, update, and delete
+
+Public read access
+
+Proper validation and JSON formatting
+
+Security Enhancements
+
+Role-based access enforced 
+
+Only users with the ADMIN role can modify data
 
 
 ## Required Softeware
